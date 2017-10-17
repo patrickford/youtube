@@ -3,7 +3,6 @@ $(document).ready(function() {
   $("#search-form").submit(function(event) {
     event.preventDefault();
     var search = $("#search-term").val();
-    console.log(search)
     $("#search-term").val("");
     getVideos(search);
   });
